@@ -4,13 +4,22 @@ Establish the top five trending fashion posts across Instagram in this April 202
 ### TO DO:
 Steps:
 #### num_days_trending
-- [ ] Calculate the change in likes from last collected
-- [ ] Create a combined dataset with all the features
-- [ ] Visualise how the models trending had their likes change over time
 - [ ] Predict the num_days_trending
+    - [ ] Perform PCA on each of the five models (linear, SVR, Nu SVR, Linear with SGD, MLP) and see which one performs best and conclude whether it is better to use PCA or not
+    - [ ] Perform cross validation when measuring the original performance of the model (like this we calculate the average which
+    is better)
+    - [ ] Once the model has been decided (very probable to be linear), check which regularisation method to use (No reg, Ridge, Lasso)
+    - [ ] Check if the model has a bias-variance problem
+    - [ ] Use Bayesian methods for hyperparameter tuning
 
 #### fashion
 - [ ] Check whether there has been an NLP model built to predict fashion
+
+### Problems that I have encountered:
+* There's an imbalanced dataset problem
+
+### Stuff to include in the report:
+* Why have I used MSE to measure the performance of the model?
 
 
 ### TO DO (Visualisations):
