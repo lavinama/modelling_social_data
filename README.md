@@ -4,13 +4,20 @@ Establish the top five trending fashion posts across Instagram in this April 202
 ### TO DO:
 Steps:
 #### num_days_trending
-- [ ] Predict the num_days_trending
-    - [ ] Perform PCA on each of the five models (linear, SVR, Nu SVR, Linear with SGD, MLP) and see which one performs best and conclude whether it is better to use PCA or not
-    - [ ] Perform cross validation when measuring the original performance of the model (like this we calculate the average which
+- [x] Predict the num_days_trending
+    - [x] Perform PCA on each of the five models (linear, SVR, Nu SVR, Linear with SGD, MLP) and see which one performs best and conclude whether it is better to use PCA or not
+    - [x] Perform cross validation when measuring the original performance of the model (like this we calculate the average which
     is better)
-    - [ ] Once the model has been decided (very probable to be linear), check which regularisation method to use (No reg, Ridge, Lasso)
+    - [x] Once the model has been decided (very probable to be linear), check which regularisation method to use (No reg, Ridge, Lasso). Not the case because MLP is the best
+    - [ ] Perform Hyperparameter tuning
     - [ ] Check if the model has a bias-variance problem
-    - [ ] Use Bayesian methods for hyperparameter tuning
+
+
+### Things need to check
+- If we should use 5 or 100 number of components for the PCA
+
+### Hyperparameters I need to tune:
+* the number of components of PCA
 
 #### fashion
 - [ ] Check whether there has been an NLP model built to predict fashion
